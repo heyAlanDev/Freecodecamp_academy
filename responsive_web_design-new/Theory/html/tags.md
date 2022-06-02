@@ -4,3 +4,7 @@
 <p> </p> : the p tag is for paragraph
 <!-- code --> : comment the code
 ```
+# tag for structure
+```html
+<main> </main> : use to reference the main section
+```
