@@ -1,6 +1,12 @@
-<!-- Step 6
-HTML elements are often nested within other HTML elements. In the previous step you nested the h2 element, comment and p element within the main element. A nested element is a child of its parent element.
-To make HTML easier to read, indent the h2 element, the comment, and p element exactly two spaces to indicate they are children of the main element. -->
+<!-- Step 7
+You can add images to your website by using the img element. img elements have an opening tag without a closing tag. A tag for an element without a closing tag is known as a self-closing tag.
+Add an img element below the p element. At this point, no image will show up in the browser. -->
+<!-- Step 8
+HTML attributes are special words used inside the opening tag of an element to control the element's behavior. The src attribute in an img element specifies the image's URL (where the image is located). An example of an img element using an src attribute: <img src="https://www.your-image-source.com/your-image.jpg">.
+Add an src attribute to the existing img element that is set to the following URL: https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg. -->
+<!-- Step 9
+All img elements should have an alt attribute. The alt attribute's text is used for screen readers to improve accessibility and is displayed if the image fails to load. For example, <img src="cat.jpg" alt="A cat"> has an alt attribute with the text A cat.
+Add an alt attribute to the img element with the text A cute orange cat lying on its back. -->
 <html>
   <body>
     <h1>CatPhotoApp</h1>
@@ -8,6 +14,7 @@ To make HTML easier to read, indent the h2 element, the comment, and p element e
       <h2>Cat Photos</h2>
       <!-- TODO: Add link to cat photos -->
       <p>Click here to view more cat photos.</p>
+      <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back" />
     </main>
   </body>
 </html>
