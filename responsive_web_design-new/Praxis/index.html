@@ -1,23 +1,27 @@
-<!-- Step 10
-You can link to another page with the anchor (a) element. For example, <a href='https://freecodecamp.org'></a> would link to freecodecamp.org.
-Add an anchor element after the paragraph that links to https://freecatphotoapp.com. At this point, the link won’t show up in the preview. -->
-<!-- Step 11
-A link's text must be placed between the opening and closing tags of an anchor (a) element. For example, <a href="https://www.freecodecamp.org">click here to go to freeCodeCamp.org</a> is a link with the text click here to go to freeCodeCamp.org.
-Add the anchor text cat photos to the anchor element. This will become the link's text. -->
-<!-- Step 12
-Turn the words cat photos located inside p element into a link using the same value for the href attribute as the link below the p element. The p element should show the same text in the browser, but the words cat photos should now be a link. Make sure to remove the a element with the text cat photos on the line below the p element. -->
-<!-- Step 13
-Add a target attribute with the value _blank to the anchor (a) element's opening tag, so that the link opens in a new tab. -->
-<!-- Step 14
-Turn the image into a link by surrounding it with necessary element tags. Use https://freecatphotoapp.com as the anchor's href attribute value. -->
-  <html>
-    <body>
-      <h1>CatPhotoApp</h1>
-      <main>
+<!-- Step 15
+Before adding any new content, you should make use of a section element to separate the cat photos content from the future content.
+Take all the elements currently located within the main element and nest them in a section element. -->
+<!-- Step 16
+It is time to add a new section. Add a second section element below the existing section element. -->
+<!-- Step 17
+Within the second section element, add a new h2 element with the text Cat Lists. -->
+<!-- Step 18
+When you add a lower rank heading element to the page, it's implied that you're starting a new subsection.
+After the last h2 element of the second section element, add an h3 element with the text Things cats love:. -->
+<html>
+  <body>
+    <h1>CatPhotoApp</h1>
+    <main>
+      <section>
         <h2>Cat Photos</h2>
         <!-- TODO: Add link to cat photos -->
-        <p>Click here to view more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a>.</p>
-        <a href="https://freecatphotoapp.com"> <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."> </a>
-      </main>
-    </body>
-  </html>
+        <p>Click here to view more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+      </section>
+    </main>
+  </body>
+</html>

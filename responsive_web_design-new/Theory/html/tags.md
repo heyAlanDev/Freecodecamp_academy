@@ -9,4 +9,5 @@
 # tag for structure
 ```html
 <main> </main> : use to reference the main section
+<section> </section> : use to reference a section
 ```
