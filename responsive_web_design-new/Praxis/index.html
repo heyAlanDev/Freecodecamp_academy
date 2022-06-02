@@ -1,20 +1,23 @@
-<!-- Step 7
-You can add images to your website by using the img element. img elements have an opening tag without a closing tag. A tag for an element without a closing tag is known as a self-closing tag.
-Add an img element below the p element. At this point, no image will show up in the browser. -->
-<!-- Step 8
-HTML attributes are special words used inside the opening tag of an element to control the element's behavior. The src attribute in an img element specifies the image's URL (where the image is located). An example of an img element using an src attribute: <img src="https://www.your-image-source.com/your-image.jpg">.
-Add an src attribute to the existing img element that is set to the following URL: https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg. -->
-<!-- Step 9
-All img elements should have an alt attribute. The alt attribute's text is used for screen readers to improve accessibility and is displayed if the image fails to load. For example, <img src="cat.jpg" alt="A cat"> has an alt attribute with the text A cat.
-Add an alt attribute to the img element with the text A cute orange cat lying on its back. -->
-<html>
-  <body>
-    <h1>CatPhotoApp</h1>
-    <main>
-      <h2>Cat Photos</h2>
-      <!-- TODO: Add link to cat photos -->
-      <p>Click here to view more cat photos.</p>
-      <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back" />
-    </main>
-  </body>
-</html>
+<!-- Step 10
+You can link to another page with the anchor (a) element. For example, <a href='https://freecodecamp.org'></a> would link to freecodecamp.org.
+Add an anchor element after the paragraph that links to https://freecatphotoapp.com. At this point, the link won’t show up in the preview. -->
+<!-- Step 11
+A link's text must be placed between the opening and closing tags of an anchor (a) element. For example, <a href="https://www.freecodecamp.org">click here to go to freeCodeCamp.org</a> is a link with the text click here to go to freeCodeCamp.org.
+Add the anchor text cat photos to the anchor element. This will become the link's text. -->
+<!-- Step 12
+Turn the words cat photos located inside p element into a link using the same value for the href attribute as the link below the p element. The p element should show the same text in the browser, but the words cat photos should now be a link. Make sure to remove the a element with the text cat photos on the line below the p element. -->
+<!-- Step 13
+Add a target attribute with the value _blank to the anchor (a) element's opening tag, so that the link opens in a new tab. -->
+<!-- Step 14
+Turn the image into a link by surrounding it with necessary element tags. Use https://freecatphotoapp.com as the anchor's href attribute value. -->
+  <html>
+    <body>
+      <h1>CatPhotoApp</h1>
+      <main>
+        <h2>Cat Photos</h2>
+        <!-- TODO: Add link to cat photos -->
+        <p>Click here to view more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a>.</p>
+        <a href="https://freecatphotoapp.com"> <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."> </a>
+      </main>
+    </body>
+  </html>

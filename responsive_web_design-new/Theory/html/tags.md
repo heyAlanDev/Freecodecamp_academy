@@ -4,6 +4,7 @@
 <p> </p> : the p tag is for paragraph
 <!-- code --> : comment the code
 <img /> : is for add img
+<a> </a> : is for add links
 ```
 # tag for structure
 ```html
