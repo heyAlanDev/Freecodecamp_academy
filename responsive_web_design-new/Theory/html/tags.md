@@ -5,6 +5,8 @@
 <!-- code --> : comment the code
 <img /> : is for add img
 <a> </a> : is for add links
+<ul> </ul> : is for add unordered tags
+<li> </li> : is for add list items
 ```
 # tag for structure
 ```html

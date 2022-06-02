@@ -1,19 +1,20 @@
-<!-- Step 15
-Before adding any new content, you should make use of a section element to separate the cat photos content from the future content.
-Take all the elements currently located within the main element and nest them in a section element. -->
-<!-- Step 16
-It is time to add a new section. Add a second section element below the existing section element. -->
-<!-- Step 17
-Within the second section element, add a new h2 element with the text Cat Lists. -->
-<!-- Step 18
-When you add a lower rank heading element to the page, it's implied that you're starting a new subsection.
-After the last h2 element of the second section element, add an h3 element with the text Things cats love:. -->
+<!-- Step 19
+After the h3 element with the Things cats love: text, add an unordered list (ul) element. Note that nothing will be displayed at this point. -->
+<!-- Step 20
+Use list item (li) elements to create items in a list. Here is an example of list items in an unordered list:
+<ul>
+  <li>milk</li>
+  <li>cheese</li>
+</ul>
+Nest three list items within the ul element to display three things cats love: cat nip, laser pointers and lasagna. -->
+<!-- Step 21
+After the unordered list, add a new image with an src attribute value set to https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg and an alt attribute value set to A slice of lasagna on a plate. -->
 <html>
   <body>
     <h1>CatPhotoApp</h1>
     <main>
       <section>
-        <h2>Cat Photos</h2>
+      <h2>Cat Photos</h2>
         <!-- TODO: Add link to cat photos -->
         <p>Click here to view more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>.</p>
         <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
@@ -21,6 +22,11 @@ After the last h2 element of the second section element, add an h3 element with 
       <section>
         <h2>Cat Lists</h2>
         <h3>Things cats love:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul> <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate">
       </section>
     </main>
   </body>
