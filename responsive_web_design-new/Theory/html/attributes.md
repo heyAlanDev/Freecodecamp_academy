@@ -1,4 +1,8 @@
 # Attributes for the tags
+## * (all)
+```html
+id : allow identify a element (Each id attribute's value must be unique from all other id values for the entire page)
+```
 ## img
 ```html
 src : specifies the image's URL (where the image is located)
@@ -19,6 +23,7 @@ type : allow you choose the imput type
 name : to represent the data being submitted to server
 placeholder : is used to give people a hint about what kind of information to enter into an input
 required : To prevent a user from submitting your form when required information is missing
+value : to represent the data value being submitted to server
 ```
 # Values for the attributes
 # a
@@ -30,4 +35,5 @@ target
 ```html
 type 
     text : Create a text field to get text input from a use
+    radio : Create a radio button to get text input from a use
 ```

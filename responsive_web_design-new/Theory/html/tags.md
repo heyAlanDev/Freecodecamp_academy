@@ -13,6 +13,8 @@
 <em> </em> :  is used to define emphasized text, The content inside is typically displayed in italic
 <strong> </strong> : is used to define emphasized text, The content inside is typically displayed in bold
 <input /> : allows you several ways to collect data from a web form
+<fieldset> </fieldset> : is used to group related inputs and labels together in a web form
+<legend> </legend> : acts as a caption for the content in the fieldset element
 ```
 # tag for structure
 ```html
