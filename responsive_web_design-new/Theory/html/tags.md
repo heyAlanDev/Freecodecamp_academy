@@ -21,4 +21,5 @@
 <main> </main> : use to reference the main section
 <section> </section> : use to reference a section
 <form> </form> : use to reference a form
+<footer> </footer> : use to reference the footer
 ```

@@ -24,6 +24,7 @@ name : to represent the data being submitted to server
 placeholder : is used to give people a hint about what kind of information to enter into an input
 required : To prevent a user from submitting your form when required information is missing
 value : to represent the data value being submitted to server
+checked : select by default
 ```
 # Values for the attributes
 # a
@@ -36,4 +37,5 @@ target
 type 
     text : Create a text field to get text input from a use
     radio : Create a radio button to get text input from a use
+    checkbox : Create a checkbox to get text input from a use
 ```
