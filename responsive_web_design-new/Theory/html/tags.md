@@ -7,6 +7,8 @@
 <a> </a> : is for add links
 <ul> </ul> : is for add unordered tags
 <li> </li> : is for add list items
+<figure> </figure> : represents self-contained content and will allow you to associate an image with a caption
+<figcaption> </figcaption> :  is used to add a caption to describe the image contained within the figure element
 ```
 # tag for structure
 ```html
