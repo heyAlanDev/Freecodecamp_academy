@@ -12,9 +12,11 @@
 <figcaption> </figcaption> :  is used to add a caption to describe the image contained within the figure element
 <em> </em> :  is used to define emphasized text, The content inside is typically displayed in italic
 <strong> </strong> : is used to define emphasized text, The content inside is typically displayed in bold
+<input /> : allows you several ways to collect data from a web form
 ```
 # tag for structure
 ```html
 <main> </main> : use to reference the main section
 <section> </section> : use to reference a section
+<form> </form> : use to reference a form
 ```
