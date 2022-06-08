@@ -1,70 +1,47 @@
-<!-- Step 64
-Notice that everything you've added to the page so far is inside the body element. All page content elements that should be rendered to the page go inside the body element. However, other important information goes inside the head element.
-Add a head element just above the body element. -->
-<!-- Step 66
-Notice that the entire contents of the page are nested within an html element. All other elements must be descendants of this html element.
-Add the lang attribute with the value en to the opening html tag to specify that the language of the page is English. -->
-<!-- Step 67
-All pages should begin with <!DOCTYPE html>. This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications.
-To complete this project, add this declaration as the first line of the code. -->
+<!-- Step 1
+As you learned in the last few steps of the Cat Photo App, there is a basic structure needed to start building your web page.
+Add the <!DOCTYPE html> tag, and an html element. -->
+<!-- Step 2
+Add a head element within the html element, so you can add a title element. The title element's text should be Cafe Menu. -->
+<!-- Step 3
+The title is one of several elements that provide extra information not visible on the web page, but it is useful for search engines or how the page gets displayed.
+Inside the head element, nest a meta element with an attribute named charset set to the value utf-8 to tell the browser how to encode characters for the page. Note that meta elements are self-closing. -->
+<!-- Step 4
+To prepare to create some actual content, add a body element below the head element. -->
+<!-- Step 5
+The name of the cafe is CAMPER CAFE. Add an h1 element within your body element. Give it the name of the cafe in capitalized letters to make it stand out. -->
+<!-- Step 6
+To let visitors know the cafe was founded in 2020, add a p element below the h1 element with the text Est. 2020. -->
+<!-- Step 7
+Since the p element added in the previous step provides supplemental information about the cafe, nest both the h1 and p elements in a header element. -->
+<!-- Step 8
+It's time to add some menu content. Add a main element below the existing header element. It will eventually contain pricing information about coffee and desserts offered by the cafe. -->
+<!-- Step 9
+There will be two sections on the menu, one for coffees and one for desserts. Add a section element within the main element so you have a place to put all the coffees available. -->
+<!-- Step 10
+Create an h2 element in the section element and give it the text Coffee. -->
+<!-- Step 11
+Up until now, you have been limited regarding the presentation and appearance of the content you create. To start taking control, add a style element within the head element. -->
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>CatPhotoApp</title>
+    <meta charset="UTF-8" />
+    <title>Cafe Menu</title>
+    <style>
+      
+    </style>
   </head>
   <body>
-    <h1>CatPhotoApp</h1>
+    <header>
+      <h1>CAMPER CAFE</h1>
+      <p>Est. 2020</p>
+    </header>
     <main>
-      <!-- <section> -->
-        <h2>Cat Photos</h2>
-        <!-- TODO: Add link to cat photos -->
-        <p>Click here to view more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>.</p>
-        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
-      </section>
       <section>
-        <h2>Cat Lists</h2>
-        <h3>Things cats love:</h3>
-        <ul>
-          <li>cat nip</li>
-          <li>laser pointers</li>
-          <li>lasagna</li>
-        </ul>
-        <figure>
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
-          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
-        </figure>
-        <h3>Top 3 things cats hate:</h3>
-        <ol>
-          <li>flea treatment</li>
-          <li>thunder</li>
-          <li>other cats</li>
-        </ol>
-        <figure>
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
-          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
-        </figure>
-      </section>
-      <section>
-        <h2>Cat Form</h2>
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
-          <fieldset>
-              <legend>Is your cat an indoor or outdoor cat?</legend>
-              <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked/>Indoor</label>
-              <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor"/>Outdoor</label>
-          </fieldset>
-          <fieldset>
-            <legend>What's your cat's personality?</legend>
-            <input type="checkbox" name="personality" id="loving" value="loving" checked /> <label for="loving">Loving</label>
-            <input type="checkbox" name="personality" id="lazy" value="lazy" /> <label for="lazy">Lazy</label>
-            <input type="checkbox" name="personality" id="energetic" value="energetic" /> <label for="energetic">Energetic</label>
-          </fieldset>
-          <input type="text" name="catphotourl" placeholder="cat photo URL" required />
-          <button type="submit">Submit</button>
-        </form>
+        <h2>Coffee</h2>
       </section>
     </main>
-    <footer>
-      <p>No Copyright - <afreeCodeCamp.org</p>
-    </footer>
-  </body>
+    </body>
 </html>

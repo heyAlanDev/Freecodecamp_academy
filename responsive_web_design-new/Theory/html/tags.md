@@ -16,6 +16,12 @@
 <fieldset> </fieldset> : is used to group related inputs and labels together in a web form
 <legend> </legend> : acts as a caption for the content in the fieldset element
 ```
+# tag for head
+```html
+<title> </title> : defines the document's title that is shown in a browser 's title bar or a page's tab
+<meta /> : used to provide structured metadata about a Web page
+<style> </style> : use to create style with CSS (isn't recommended it's better create a file with extension .css and link the html to this file)
+```
 # tag for structure
 ```html
 <main> </main> : use to reference the main section
