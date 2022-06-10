@@ -24,6 +24,7 @@
 ```
 # tag for structure
 ```html
+<div> </div> : is used mainly for design layout (is the more use tag)
 <main> </main> : use to reference the main section
 <section> </section> : use to reference a section
 <form> </form> : use to reference a form

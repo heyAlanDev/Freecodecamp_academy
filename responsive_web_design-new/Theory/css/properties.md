@@ -8,6 +8,6 @@ element1, element2, elementn {} : to select all element with this tags
 ```css
 {
     text-align: to align the text;
-    text
+    background-color : to paint the background of element;
 }
 ```
