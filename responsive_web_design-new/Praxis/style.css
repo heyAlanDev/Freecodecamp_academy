@@ -1,25 +1,41 @@
-/* Step 22
-The goal now is to make the div not take up the entire width of the page. The CSS width property is perfect for this. Create a new type selector in the style sheet that gives your div element a width of 300px. */
-/* Step 23
-Comments in CSS look like this:
-/ * comment here (no spaces)* /
-In your style sheet, comment out the the line containing the background-color property and value, so you can see the effect of only styling div element. This will make the background white again. */
-/* Step 24
-Now use the existing div selector to set the background color of the div element to be burlywood. */
-/* Step 25
-Now it's easy to see that the text is centered inside the div element. Currently, the width of the div element is specified in pixels (px). Change the width property's value to be 80%, to make it 80% the width of its parent element (body). */
-/* Step 26
-Next, you want to center the div horizontally. You can do this by setting its margin-left and margin-right properties to auto. Think of the margin as invisible space around an element. Using these two margin properties, center the div element within the body element. */
-/* Step 27
-So far you have been using type selectors to style elements. A class selector is defined by a name with a dot directly in front of it, like this:
-.class-name {
-  styles
-}
-Change the existing div selector into a class selector by replacing div with a class named menu. */
-
+/* Step 29
+Since the cafe's main product for sale is coffee, you could use an image of coffee beans for the background of the page.
+Delete the comment and its contents inside the body type selector. Now add a background-image property and set its value to url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg). */
+/* Step 34
+Using your new flavor class as a selector, set the text-align property's value to left. */
+/* Step 36 
+Now align the text to the right for the elements with the price class. */
+/* Step 38
+The p elements are nested in an article element with the class attribute of item. You can style all the p elements nested anywhere in elements with a class named item like this:
+.item p { }
+Using the above selector, add a display property with value inline-block so the p elements behave more like inline elements. */
+/* Step 39
+That's closer, but the price didn't stay over on the right. This is because inline-block elements only take up the width of their content. To spread them out, add a width property to the flavor and price class selectors that have a value of 50% each. */
+/* Step 40
+Well that did not work. Styling the p elements as inline-block and placing them on separate lines in the code creates an extra space to the right of the first p element, causing the second one to shift to the next line. One way to fix this is to make each p element's width a little less than 50%.
+Change the width value to 49% for each class to see what happens. */
+/* Step 42
+Now go ahead and change both the flavor and price class' widths to be 50% again. */
+/* Step 46
+If you make the width of the page preview smaller, you will notice at some point, some of the text on the left starts wrapping around to the next line. This is because the width of the p elements on the left side can only take up 50% of the space.
+Since you know the prices on the right have significantly fewer characters, change the flavor class width value to be 75% and the price class width value to be 25%. */
+/* Step 52
+Something does not look right. You added the correct class attribute value to the p element with Donut as its text, but you have not defined a selector for it.
+Since the flavor class selector already has the properties you want, just add the dessert class name to it. */
+/* Step 54
+You can give your menu some space between the content and the sides with various padding properties.
+Give the menu class a padding-left and a padding-right with the same value 20px. */
+/* Step 55
+That looks better. Now try to add the same 20px padding to the top and bottom of the menu. */
+/* Step 56
+Since all 4 sides of the menu have the same internal spacing, go ahead and delete the four properties and use a single padding property with the value 20px. */
 
 body {
-  /* background-color: burlywood; */
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}
+
+h1, h2, p {
+  text-align: center;
 }
 
 .menu {
@@ -27,9 +43,20 @@ body {
   background-color: burlywood;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px;
 }  
 
-h1, h2, p {
-    text-align: center;
+.item p {
+  display: inline-block;
 }
 
+
+.flavor, .dessert {
+  text-align: left;
+  width : 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
