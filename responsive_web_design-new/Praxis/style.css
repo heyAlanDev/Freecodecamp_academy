@@ -1,53 +1,92 @@
-/* Step 29
-Since the cafe's main product for sale is coffee, you could use an image of coffee beans for the background of the page.
-Delete the comment and its contents inside the body type selector. Now add a background-image property and set its value to url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg). */
-/* Step 34
-Using your new flavor class as a selector, set the text-align property's value to left. */
-/* Step 36 
-Now align the text to the right for the elements with the price class. */
-/* Step 38
-The p elements are nested in an article element with the class attribute of item. You can style all the p elements nested anywhere in elements with a class named item like this:
-.item p { }
-Using the above selector, add a display property with value inline-block so the p elements behave more like inline elements. */
-/* Step 39
-That's closer, but the price didn't stay over on the right. This is because inline-block elements only take up the width of their content. To spread them out, add a width property to the flavor and price class selectors that have a value of 50% each. */
-/* Step 40
-Well that did not work. Styling the p elements as inline-block and placing them on separate lines in the code creates an extra space to the right of the first p element, causing the second one to shift to the next line. One way to fix this is to make each p element's width a little less than 50%.
-Change the width value to 49% for each class to see what happens. */
-/* Step 42
-Now go ahead and change both the flavor and price class' widths to be 50% again. */
-/* Step 46
-If you make the width of the page preview smaller, you will notice at some point, some of the text on the left starts wrapping around to the next line. This is because the width of the p elements on the left side can only take up 50% of the space.
-Since you know the prices on the right have significantly fewer characters, change the flavor class width value to be 75% and the price class width value to be 25%. */
-/* Step 52
-Something does not look right. You added the correct class attribute value to the p element with Donut as its text, but you have not defined a selector for it.
-Since the flavor class selector already has the properties you want, just add the dessert class name to it. */
-/* Step 54
-You can give your menu some space between the content and the sides with various padding properties.
-Give the menu class a padding-left and a padding-right with the same value 20px. */
-/* Step 55
-That looks better. Now try to add the same 20px padding to the top and bottom of the menu. */
-/* Step 56
-Since all 4 sides of the menu have the same internal spacing, go ahead and delete the four properties and use a single padding property with the value 20px. */
+/* Step 57
+The current width of the menu will always take up 80% of the body element's width. On a very wide screen, the coffee and dessert appear far apart from their prices.
+Add a max-width property to the menu class with a value of 500px to prevent it from growing too wide. */
+/* Step 58
+You can change the font-family of text, to make it look different from the default font of your browser. Each browser has some common fonts available to it.
+Change all the text in your body, by adding a font-family property with the value sans-serif. This is a fairly common font that is very readable. */
+/* Step 59
+It is a bit boring for all the text to have the same font-family. You can still have the majority of the text sans-serif and make just the h1 and h2 elements different using a different selector.
+Style both the h1 and the h2 elements so that only these elements' text use Impact font. */
+/* Step 60
+You can add a fallback value for the font-family by adding another font name separated by a comma. Fallbacks are used in instances where the initial is not found/available.
+Add the fallback font serif after the Impact font. */
+/* Step 61
+Make the Est. 2020 text italicized by creating an established class selector and giving it the font-style property with the value italic. */
+/* Step 63
+The typography of heading elements (e.g. h1, h2) is set by default values of users' browsers.
+Add two new type selectors (h1 and h2). Use the font-size property for both, but use the value 40px for the h1 and 30px for the h2. */
+/* Step 68
+The default properties of an hr element will make it appear as a thin light grey line. You can change the height of the line by specifying a value for the height property.
+Change the height the hr element to be 3px. */
+/* Step 69
+Change the background color of the hr element to brown so it matches the color of the coffee beans. */
+/* Step 70
+Notice the grey color along the edges of the line. Those edges are known as borders. Each side of an element can have a different color or they can all be the same.
+Make all the edges of the hr element the same color as the background of it using the border-color property. */
+/* Step 71
+Notice how the thickness of the line looks bigger? The default value of a property named border-width is 1px for all edges of hr elements. By changing the border to the same color as the background, the total height of the line is 5px (3px plus the top and bottom border width of 1px).
+Change the height property of the hr to be 2px, so the total height of it becomes 4px. */
+/* Step 73
+To create a little more room around the menu, add 20px of space on the inside of the body element by using the padding property. */
+/* Step 74
+Focusing on the menu items and prices, there is a fairly large gap between each line.
+Target all the p elements nested in elements with the class named item and set their top and bottom margin to be 5px. */
+/* Step 75
+Using the same style selector in the previous step, make the font size of the items and prices larger by using a value of 18px. */
+/* Step 76
+Changing the margin-bottom to 5px looks great. However, now the space between the Cinnamon Roll menu item and the second hr element does not match the space between the top hr element and the Coffee heading.
+Add some more space by creating a class named bottom-line using 25px for the margin-top property. */
 
 body {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-family: Impact, serif;  
 }
 
 h1, h2, p {
   text-align: center;
 }
 
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+.established {
+  font-style: italic;
+}
+
 .menu {
-  width: 80%;
+  width: 50%;
   background-color: burlywood;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+  max-width: 500px;
 }  
 
 .item p {
   display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;  
 }
 
 
@@ -60,3 +99,6 @@ h1, h2, p {
   text-align: right;
   width: 25%;
 }
+
+
+

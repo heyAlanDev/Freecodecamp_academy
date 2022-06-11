@@ -1,46 +1,18 @@
-<!-- Step 28
-To apply the class's styling to the div element, add a class attribute to the div element's opening tag and set its value to menu. -->
-<!-- Step 30
-It’s looking good. Time to start adding some menu items. Add an empty article element under the Coffee heading. It will contain a flavor and price of each coffee you currently offer. */ -->
-<!-- Step 31
-article elements commonly contain multiple elements that have related information. In this case, it will contain a coffee flavor and a price for that flavor. Nest two p elements inside your article element. The first one's text should be French Vanilla, and the second's text 3.00. -->
-<!-- Step 32
-Starting below the existing coffee/price pair, add the following coffee and prices using article elements with two nested p elements inside each. As before, the first p element's text should contain the coffee flavor and the second p element's text should contain the price. 
-Caramel Macchiato 3.75
-Pumpkin Spice 3.50
-Hazelnut 4.00
-Mocha 4.50
--->
-<!-- Step 33
-The flavors and prices are currently stacked on top of each other and centered with their respective p elements. It would be nice if the flavor was on the left and the price was on the right.
-Add the class name flavor to the French Vanilla p element. -->
-<!-- Step 35
-Next, you want to align the price to the right. Add a class named price to your p element that has 3.00 as its text. -->
-<!-- Step 37
-That is kind of what you want, but now it would be nice if the flavor and price were on the same line. p elements are block-level elements, so they take up the entire width of their parent element.
-To get them on the same line, you need to apply some styling to the p elements, so they behave more like inline elements. Add a class attribute with the value item to the first article element under the Coffee heading. -->
-<!-- Step 41
-That worked, but there is still a little space on the right of the price.
-You could keep trying various percentages for the widths. Instead, simply move the price p element to be on the same line and make sure there is no space between them. -->
-<!-- Step 43
-Now that you know it works, you can change the remaining article and p elements to match the first set. Start by adding the class item to the other article elements. -->
-<!-- Step 44
-Next, position the other p elements to be on the same line with no space between them. -->
-<!-- Step 45
-To complete the styling, add the applicable class names flavor and price to all the remaining p elements. -->
-<!-- Step 47
-You will come back to styling the menu in a few steps, but for now, go ahead and add a second section element below the first for displaying the desserts offered by the cafe. -->
-<!-- Step 48
-Add an h2 element in the new section and give it the text Desserts. -->
-<!-- Step 49
-Add an empty article element under the Desserts heading. Give it a class attribute with the value item. -->
-<!-- Step 51
-For the two p elements you just added, add dessert as the value of the first p element's class attribute and the value price as the second p elements class attribute. -->
-<!-- Step 53
-Below the dessert you just added, add the rest of the desserts and prices using three more article elements, each with two nested p elements. Each element should have the correct dessert and price text, and all of them should have the correct classes.
-Cherry Pie 2.75
-Cheesecake 3.00
-Cinnamon Roll 2.50 -->
+<!-- Step 62
+Now apply the established class to the Est. 2020 text. -->
+<!-- Step 64
+Add a footer element below the main element, where you can add some additional information. -->
+<!-- Step 65 
+Inside the footer, add a p element. Then, nest an anchor (a) element in the p that links to https://www.freecodecamp.org and has the text Visit our website. -->
+<!-- Step 66
+Add a second p element below the one with the link and give it the text 123 Free Code Camp Drive. -->
+<!-- Step 67
+You can use an hr element to display a divider between sections of different content.
+First, add an hr element between the first header element and the main element. Note that hr elements are self closing. -->
+<!-- Step 72
+Go ahead and add another hr element between the main element and the footer element. -->
+<!-- Step 77
+Now add the bottom-line class to the second hr element so the styling is applied. -->
 
 <!DOCTYPE html>
 <html>
@@ -54,8 +26,9 @@ Cinnamon Roll 2.50 -->
     <div class="menu">
       <header>
         <h1>CAMPER CAFE</h1>
-        <p>Est. 2020</p>
+        <p class="established">Est. 2020</p>
       </header>
+      <hr class="bottom-line"/>
       <main>
         <section>
           <h2>Coffee</h2>
@@ -91,6 +64,13 @@ Cinnamon Roll 2.50 -->
           </article>
         </section>
       </main>
+      <hr/>
+      <footer>        
+        <p>
+          <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
+        </p>
+        <p>123 Free Code Camp Drive</p>
+      </footer>
     </div>
     </body>
 </html>
