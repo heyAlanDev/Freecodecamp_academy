@@ -29,6 +29,6 @@ element:pseudo-class {} : to select the pseudo class of a element
     padding-right : to change the element padding right;
     padding-top : to change the element padding top;
     padding-bottom : to change the element padding bottom;
-    padding : to change the element padding (if have a unic value change all element padding, if have two values the first is for top and bottom padding and the second);
+    padding : to change the element padding (if have one value change all element padding, if have two values the first is for top and bottom padding and the second value change the right and left padding);
 }
 ```

@@ -1,23 +1,3 @@
-<!-- Step 1
-As you've seen in the previous projects, webpages should start with a DOCTYPE html declaration, followed by an html element.
-Add a DOCTYPE html declaration at the top of the document, and an html element after that. -->
-<!-- Step 2
-Nest a head element within the html element. Just after the head element, add a body element. -->
-<!-- Step 3
-Remember that the title element gives search engines extra information about the page. It also tells browsers what text to display in the title bar when the page is open, and on the tab for the page.
-Within the head element, nest a title element with the text Colored Markers. -->
-<!-- Step 4
-To tell browsers how to encode characters on your page, set the charset to utf-8. utf-8 is a universal character set that includes almost every character from all human languages.
-Inside the head element, nest a meta element with the attribute charset set to utf-8. Remember that meta elements are self-closing, and do not need a closing tag. -->
-<!-- Step 5
-Finally, use a viewport <meta> tag to make sure your page looks the same on all devices.
-Nest a self-closing meta element within the head. Give it a name attribute set to viewport and a content attribute set to width=device-width, initial-scale=1.0. -->
-<!-- Step 6
-Now you're ready to start adding content to the page.
-Within the body, nest an h1 element with the text CSS Color Markers. -->
-<!-- Step 7
-In this project you'll work with an external CSS file to style the page. We've already created a styles.css file for you. But before you can use it, you'll need to link it to the page.
-Nest a link element within the head. Give it a rel attribute set to stylesheet, a type attribute set to text/css, and an href attribute set to styles.css. -->
 
 <DOCTYPE html>
 <html>
@@ -29,6 +9,11 @@ Nest a link element within the head. Give it a rel attribute set to stylesheet, 
   </head>
   <body>
     <h1>CSS Color Markers</h1>
+    <div class="container">
+      <div class="marker one"></div>
+      <div class="marker two"></div>
+      <div class="marker three"></div>
+    </div>
   </body>
 </html>
 
