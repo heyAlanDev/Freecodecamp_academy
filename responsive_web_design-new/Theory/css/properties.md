@@ -5,11 +5,13 @@
 element {} : to select all element with this tag
 element1, element2, elementn {} : to select all element with this tags
 dadElement sonElement {} : to select sonElement that nest in dadElement
-.classSelector {} : to select element this class attribute  
+.classSelector {} : to select element this class attribute
+element:pseudo-class {} : to select the pseudo class of a element 
 ```
 # Properties for style
 ```css
 {
+    color : to change the text color;
     font-family : to change the element font;
     font-size : to change the element font size;
     text-align: to align the text;
@@ -21,6 +23,8 @@ dadElement sonElement {} : to select sonElement that nest in dadElement
     max-width : defines the maximum width of an element;
     margin-left : to change the element margin left;
     margin-right : to change the element margin right;
+    margin-top : to change the element margin top;
+    margin-bottom : to change the element margin bottom;
     padding-left : to change the element padding left;
     padding-right : to change the element padding right;
     padding-top : to change the element padding top;

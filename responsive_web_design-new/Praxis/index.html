@@ -1,26 +1,18 @@
-<!-- Step 62
-Now apply the established class to the Est. 2020 text. -->
-<!-- Step 64
-Add a footer element below the main element, where you can add some additional information. -->
-<!-- Step 65 
-Inside the footer, add a p element. Then, nest an anchor (a) element in the p that links to https://www.freecodecamp.org and has the text Visit our website. -->
-<!-- Step 66
-Add a second p element below the one with the link and give it the text 123 Free Code Camp Drive. -->
-<!-- Step 67
-You can use an hr element to display a divider between sections of different content.
-First, add an hr element between the first header element and the main element. Note that hr elements are self closing. -->
-<!-- Step 72
-Go ahead and add another hr element between the main element and the footer element. -->
-<!-- Step 77
-Now add the bottom-line class to the second hr element so the styling is applied. -->
+<!-- Step 88
+Now apply the address class to the p element containing the address. -->
+<!-- Step 89
+The menu looks good, but other than the coffee beans background image, it is mainly just text.
+Under the Coffee heading, add an image using the url https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg. Give the image an alt value of coffee icon. -->
+<!-- Step 91
+Add one last image under the Desserts heading using the url https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg. Give the image an alt value of pie icon. -->
 
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Cafe Menu</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="menu">
@@ -28,10 +20,11 @@ Now add the bottom-line class to the second hr element so the styling is applied
         <h1>CAMPER CAFE</h1>
         <p class="established">Est. 2020</p>
       </header>
-      <hr class="bottom-line"/>
+      <hr>
       <main>
         <section>
           <h2>Coffee</h2>
+            <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon" />
           <article class="item">
             <p class="flavor">French Vanilla</p><p class="price">3.00</p>
           </article>
@@ -50,8 +43,9 @@ Now add the bottom-line class to the second hr element so the styling is applied
         </section>
         <section>
           <h2>Desserts</h2>
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon" />
           <article class="item">
-            <p class="dessert">Donuts</p><p class="price">1.50</p>
+            <p class="dessert">Donut</p><p class="price">1.50</p>
           </article>
           <article class="item">
             <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
@@ -64,14 +58,13 @@ Now add the bottom-line class to the second hr element so the styling is applied
           </article>
         </section>
       </main>
-      <hr/>
-      <footer>        
+      <hr class="bottom-line">
+      <footer>
         <p>
           <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
         </p>
-        <p>123 Free Code Camp Drive</p>
+        <p class="address">123 Free Code Camp Drive</p>
       </footer>
     </div>
-    </body>
-</html>
-
+  </body>
+<html>
