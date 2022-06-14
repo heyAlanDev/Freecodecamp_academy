@@ -33,6 +33,7 @@ element:pseudo-class {} : to select the pseudo class of a element
     border-bottom-style : to change the bottom border style of a element;  border-bottom-color: to change the bottom border color of a element;
     border-top-width : to change the top border width of a element;
     border-top-style : to change the top border style of a element;  border-top-color: to change the top border color of a element;
+    box-shadow : to add a shadow to a element;
     height : to change the element height;
     width : to change the element width;
     max-width : defines the maximum width of an element;
