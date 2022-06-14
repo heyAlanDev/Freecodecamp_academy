@@ -30,5 +30,6 @@ element:pseudo-class {} : to select the pseudo class of a element
     padding-top : to change the element padding top;
     padding-bottom : to change the element padding bottom;
     padding : to change the element padding (if have one value change all element padding, if have two values the first is for top and bottom padding and the second value change the right and left padding);
+    opacity : you can control how opaque or transparent an element is. With the value 0, or 0%, the element will be completely transparent, and at 1.0, or 100%, the element will be completely opaque like it is by default.
 }
 ```
