@@ -1,28 +1,25 @@
-/* Step 71
-Create a new CSS rule that targets the class sleeve. Set the width property to 110px, and the height property to 25px. */
-/* Step 72
-To make the marker look more realistic, give the sleeve a transparent white color.
-First, set the sleeve element's background-color to white. */
-/* Step 73
-Opacity describes how opaque, or non-transparent, something is. For example, a solid wall is opaque, and no light can pass through. But a drinking glass is much more transparent, and you can see through the glass to the other side.
-With the CSS opacity property, you can control how opaque or transparent an element is. With the value 0, or 0%, the element will be completely transparent, and at 1.0, or 100%, the element will be completely opaque like it is by default.
-In the .sleeve CSS rule, set the opacity property to 0.5. */
-/* Step 74
-Another way to set the opacity for an element is with the alpha channel. Similar to the opacity property, the alpha channel controls how transparent or opaque a color is.
-You've already set sleeve's opacity with a named color and the opacity property, but you can add an alpha channel to the other CSS color properties.
-Inside the .sleeve rule, remove the opacity property and value. */
-/* Step 75
-You're already familiar with using the rgb function to set colors. To add an alpha channel to an rgb color, use the rgba function instead.
-The rgba function works just like the rgb function, but takes one more number from 0 to 1.0 for the alpha channel:
-`rgba(redValue, greenValue, blueValue, alphaValue);`
-In the .sleeve rule, use the rgba function to set the background-color property to pure white with 50% opacity. */
-/* Step 77
-Create a new CSS rule to target the class cap. In the new rule, set the width property to 60px, and the height to 25px. */
-/* Step 78
-It looks like your sleeve disappeared, but don't worry -- it's still there. What happened is that your new cap div is taking up the entire width of the marker, and is pushing the sleeve down to the next line.
-This is because the default display property for div elements is block. So when two block elements are next to each other, they stack like actual blocks. For example, your marker elements are all stacked on top of each other.
-To position two div elements on the same line, set their display properties to inline-block.
-Create a new rule to target both the cap and sleeve classes, and set display to inline-block. */
+/* Step 79
+In the last project, you learned a little bit about borders and the border-color property.
+All HTML elements have borders, though they're usually set to none by default. With CSS, you can control all aspects of an element's border, and set the border on all sides, or just one side at a time. For a border to be visible, you need to set its width and style.
+In the .sleeve CSS rule, add the border-left-width property with the value 10px. */
+/* Step 80
+Borders have several styles to choose from. You can make your border a solid line, but you can also use a dashed or dotted line if you prefer. Solid border lines are probably the most common.
+In the .sleeve CSS rule, add the border-left-style property with the value solid. */
+/* Step 81
+Your border should be visible now. If no color is set, black is used by default.
+But to make your code more readable, it's better to set the border color explicitly.
+In the .sleeve CSS rule, add the border-left-color property with the value black. */
+/* Step 82
+The border-left shorthand property lets you to set the left border's width, style, and color at the same time.
+Here is the syntax:
+`border-left: width style color;`
+In the .sleeve CSS rule, replace the border-left-width, border-left-style, and border-left-color properties with the border-left shorthand property. The values for the width, style, and color of the left border should be the same. */
+/* Step 83
+Your marker is looking good. But to make it look even more realistic, you can change the border style to double solid borders.
+For the border-left shorthand property, change the border style value from solid to double. */
+/* Step 84
+The black color of your border looks pretty harsh against the more transparent sleeve. You can use an alpha channel to lower the opacity of the black border.
+For the border-left shorthand property, use the rgba function to set the color value to pure black with 75% opacity. */
 
 h1 {
   text-align: center;
@@ -48,6 +45,7 @@ h1 {
   width: 110px;
   height: 25px;
   background-color: rgba(255, 255, 255, 0.5);
+  border-left : 10px double rgba(0, 0, 0, 0.75);
 }
 
 .cap, .sleeve {
@@ -65,4 +63,5 @@ h1 {
 .blue {
   background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
 }
+
 
