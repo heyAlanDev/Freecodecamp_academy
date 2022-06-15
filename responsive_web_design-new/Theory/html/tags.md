@@ -15,6 +15,8 @@
 <input /> : allows you several ways to collect data from a web form
 <fieldset> </fieldset> : is used to group related inputs and labels together in a web form
 <legend> </legend> : acts as a caption for the content in the fieldset element
+<select> </select> : is used to create a drop-down list
+<option> </option> : is used to create an option in a drop-down list
 ```
 # tag for head
 ```html
