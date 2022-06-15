@@ -1,11 +1,3 @@
-/* Step 7
-To spruce the project up, let us add some CSS. Begin by giving the body a width of 100%, and a height of 100vh. */
-/* Step 8
-Now, get rid of the horizontal scroll-bar, by setting the body default margin added by some browsers to 0. */
-/* Step 9
-That is better. Now, make the background easy on the eyes, by changing the body background-color to #1b1b32. Then, to see the text, change the color to #f5f6f7. */
-/* Step 14
-As label elements are inline by default, they appear on the same line as the text they are labelling. To make them appear on separate lines, add display: block to the label element, and add a margin of 0.5rem 0, to separate them from each other. */
 
 body {
   width: 100%;
