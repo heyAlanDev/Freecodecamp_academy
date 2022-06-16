@@ -45,7 +45,10 @@ element:pseudo-class {} : to select the pseudo class of a element
     box-shadow : to add a shadow to a element;
     height : to change the element height;
     width : to change the element width;
+    max-height : defines the maximum height of an element;
+    min-height : defines the minimum height of an element;
     max-width : defines the maximum width of an element;
+    min-width : defines the minimum width of an element;
     margin-left : to change the element margin left;
     margin-right : to change the element margin right;
     margin-top : to change the element margin top;
