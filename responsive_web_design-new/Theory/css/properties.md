@@ -47,6 +47,7 @@ element:pseudo-class {} : to select the pseudo class of a element
     border-top-style : to change the top border style of a element;
     border-top-color: to change the top border color of a element;
     box-shadow : to add a shadow to a element;
+    border-radius : to add a border radius to a element;
     height : to change the element height;
     width : to change the element width;
     max-height : defines the maximum height of an element;
@@ -64,5 +65,7 @@ element:pseudo-class {} : to select the pseudo class of a element
     padding-top : to change the element padding top;
     padding-bottom : to change the element padding bottom;
     opacity : you can control how opaque or transparent an element is. With the value 0, or 0%, the element will be completely transparent, and at 1.0, or 100%, the element will be completely opaque like it is by default.;
+    filter : defines visual effects (like blur and saturation) to an element;
+    transform : defines a transformation to an element;
 }
 ```
