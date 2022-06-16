@@ -35,13 +35,17 @@ element:pseudo-class {} : to select the pseudo class of a element
     border-style : to change the element border style;
     border-width : to change the element border width;
     border-left-width : to change the left border width of a element;
-    border-left-style : to change the left border style of a element;  border-left-color: to change the left border color of a element;
+    border-left-style : to change the left border style of a element;
+    border-left-color: to change the left border color of a element;
     border-right-width : to change the right border width of a element;
-    border-right-style : to change the right border style of a element;  border-right-color: to change the right border color of a element;
+    border-right-style : to change the right border style of a element;
+    border-right-color: to change the right border color of a element;
     border-bottom-width : to change the bottom border width of a element;
-    border-bottom-style : to change the bottom border style of a element;  border-bottom-color: to change the bottom border color of a element;
+    border-bottom-style : to change the bottom border style of a element;
+    border-bottom-color: to change the bottom border color of a element;
     border-top-width : to change the top border width of a element;
-    border-top-style : to change the top border style of a element;  border-top-color: to change the top border color of a element;
+    border-top-style : to change the top border style of a element;
+    border-top-color: to change the top border color of a element;
     box-shadow : to add a shadow to a element;
     height : to change the element height;
     width : to change the element width;
@@ -49,6 +53,8 @@ element:pseudo-class {} : to select the pseudo class of a element
     min-height : defines the minimum height of an element;
     max-width : defines the maximum width of an element;
     min-width : defines the minimum width of an element;
+    margin : to change the element margin (If have one value changes all element margin, if have two values the first is for top and bottom margin and the second value change the right and left margin if have three values the first change the top, the second change the left and right paddings, and the last change the bottom and if have four values the change will be clockwise);
+    padding : to change the element padding (If have one value changes all element padding, if have two values the first is for top and bottom padding and the second value change the right and left padding if have three values the first change the top, the second change the left and right paddings, and the last change the bottom and if have four values the change will be clockwise);
     margin-left : to change the element margin left;
     margin-right : to change the element margin right;
     margin-top : to change the element margin top;
@@ -57,7 +63,6 @@ element:pseudo-class {} : to select the pseudo class of a element
     padding-right : to change the element padding right;
     padding-top : to change the element padding top;
     padding-bottom : to change the element padding bottom;
-    padding : to change the element padding (if have one value change all element padding, if have two values the first is for top and bottom padding and the second value change the right and left padding);
     opacity : you can control how opaque or transparent an element is. With the value 0, or 0%, the element will be completely transparent, and at 1.0, or 100%, the element will be completely opaque like it is by default.;
 }
 ```
