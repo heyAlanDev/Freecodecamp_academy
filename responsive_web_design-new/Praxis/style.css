@@ -1,5 +1,33 @@
+/* Step 7
+Normalize your box model by creating a * selector and setting the box-sizing property to border-box. */
+/* Step 8
+Your images are currently too large, and you will not be able to see your CSS changes.
+Create a #gallery img selector to target your images. Give it a width property set to 25%.
+Also set the height property to 300px to keep your images a uniform size. */
+/* Step 9
+Remove the margin from your body element, set the font to Arial, and give it a background color of #EBE7E7. */
+/* Step 10
+Align your .header text in the center, give it a padding of 32px on all sides, and set the background to #E0DDDD. */
 
+* {
+  box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #EBE7E7;
+}
 
+.header {
+    text-align: center;
+    padding: 32px;
+    background-color: #E0DDDD;
+}
+
+#gallery img {
+  width: 25%;
+  height: 300px;
+}
 
 

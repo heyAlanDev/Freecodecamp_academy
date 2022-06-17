@@ -45,6 +45,8 @@ element:pseudo-class {} : to select the pseudo class of a element
     border-bottom-color: to change the bottom border color of a element;
     border-top-width : to change the top border width of a element;
     border-top-style : to change the top border style of a element;
+    box-sizing : defines the sizing behavior of an element;
+    display : defines the display type of an element;
     border-top-color: to change the top border color of a element;
     box-shadow : to add a shadow to a element;
     border-radius : to add a border radius to a element;
