@@ -71,3 +71,14 @@ element:pseudo-class {} : to select the pseudo class of a element
     transform : defines a transformation to an element;
 }
 ```
+## Flexbox
+```css
+{
+display: flex; : to use flexbox;
+flex-direction : to define the direction of the flexbox;
+flex-wrap : to define the wrapping behavior of the flexbox;
+justify-content : to define the alignment of the flexbox items on the main axis;
+align-items : to define the alignment of the flexbox items on the cross axis;
+object-fit : to define how the content of a replaced element is fitted to the box;
+}
+```

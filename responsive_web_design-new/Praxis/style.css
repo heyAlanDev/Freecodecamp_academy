@@ -1,13 +1,29 @@
-/* Step 7
-Normalize your box model by creating a * selector and setting the box-sizing property to border-box. */
-/* Step 8
-Your images are currently too large, and you will not be able to see your CSS changes.
-Create a #gallery img selector to target your images. Give it a width property set to 25%.
-Also set the height property to 300px to keep your images a uniform size. */
-/* Step 9
-Remove the margin from your body element, set the font to Arial, and give it a background color of #EBE7E7. */
-/* Step 10
-Align your .header text in the center, give it a padding of 32px on all sides, and set the background to #E0DDDD. */
+/* Step 11
+Flexbox is a one-dimensional CSS layout approach that focuses on the flow of content. It offers the ability to control the way items are spaced and aligned within a container.
+To set an element to use Flexbox, you give it a display property set to flex. Create a #gallery selector and give it that property. */
+/* Step 12
+Flexbox can be thought of as having two axes, the main axis and the cross axis. The main axis is determined by the flex-direction property. If flex-direction is set to row or row-reverse, the main axis is horizontal. If flex-direction is set to column or column-reverse, the main axis is vertical.
+Give your #gallery selector a flex-direction property set to row */
+/* Step 13
+You may have noticed that your images have all moved onto the same row.
+The flex-wrap property determines how your items should behave when the flex container is too small. Setting this property to wrap will allow your items to wrap to the next row/column (depending on your main axis), where nowrap will prevent your items from wrapping. When this is set to nowrap, items may either shrink to fit or overflow.
+Give the #gallery selector a flex-wrap property set to wrap. You should see your images take a four-column layout. This is because you set their width to 25% in an earlier step. */
+/* Step 14
+The justify-content property determines how the items inside a flex container are positioned along the main axis, affecting their position and the space around them.
+Give your #gallery selector a justify-content property set to center. */
+/* Step 15
+The align-items property positions the flex content along the cross axis. In this case, with your flex-direction set to row, your cross axis would be vertical.
+To vertically center your images, give your #gallery selector an align-items property set to center. */
+/* Step 16
+Give your #gallery selector a padding property set to 0 4px. */
+/* Step 17
+Notice how some of your images have become distorted. This is because the images have different aspect ratios. Rather than setting each aspect ratio individually, you can use the object-fit property to determine how images should behave.
+Give your #gallery img selector the object-fit property and set it to cover. This will tell the image to fill the img container while maintaining aspect ratio, resulting in cropping to fit. */
+/* Step 18
+Your images need some space between them.
+Give your #gallery img selector a margin-top property of 8px and a padding property of 0 4px. */
+/* Step 19
+Smooth out your images a bit by giving the #gallery img selector a border-radius property of 10px. */
 
 * {
   box-sizing: border-box;
@@ -25,9 +41,22 @@ body {
     background-color: #E0DDDD;
 }
 
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+}
+
 #gallery img {
-  width: 25%;
-  height: 300px;
+    width: 25%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 8px;
+    padding: 0 4px;
+    border-radius: 10px;
 }
 
 
