@@ -1,13 +1,10 @@
-<!-- Step 7
-Wrap your h1 and p elements in a div element. Give that div a class attribute set to label. -->
-<!-- Step 16
-Lines can help separate and group important content, especially when space is limited.
-Create a div element below your h1 element, and give it a class attribute set to divider. -->
-<!-- Step 19
-Nutrition labels have a lot of bold text to draw attention to important information. Rather than targeting each element that needs to be bold, it is more efficient to use a class to apply the bold styling to every element.
-Give your second p element a class attribute set to bold. -->
-<!-- Step 21
-Give your h1 element a class attribute set to bold. This will make the text bold again. -->
+<!-- Step 22
+Horizontal spacing between equally important elements can increase the readability of your text.
+Wrap the text 2/3 cup (55g) in a span element, and give it a class attribute set to right. -->
+<!-- Step 24
+Wrap everything within the .label element in a new header element. -->
+<!-- Step 26
+Create a new div element below your header element, and give it a class attribute set to divider lg. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,10 +17,12 @@ Give your h1 element a class attribute set to bold. This will make the text bold
   </head>
   <body>
     <div class="label">
-        <h1 class="bold">Nutrition Facts</h1>
-        <div class="divider"></div>
-        <p>8 servings per container</p>
-        <p class="bold">Serving size 2/3 cup (55g)</p>
+        <header>
+            <h1 class="bold">Nutrition Facts</h1>
+            <div class="divider"></div>
+            <p>8 servings per container</p><p class="bold">Serving size <span class="right">2/3 cup (55g)</span></p>
+        </header>
+        <div class="divider lg"></div>
     </div>
   </body>
 </html>
