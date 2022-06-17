@@ -1,14 +1,13 @@
-<!-- Step 1
-We've provided a basic HTML boilerplate for you.
-Create an h1 element within your body element and give it the text Nutrition Facts. -->
-<!-- Step 2
-Below your h1 element, add a p element with the text 8 servings per container. -->
-<!-- Step 3
-Add a second p element with the text Serving size 2/3 cup (55g). -->
-<!-- Step 4
-Within your head element, add a link element with the rel attribute set to stylesheet and the href attribute set to https://fonts.googleapis.com/css?family=Open+Sans:400,700,800.
-This will import the Open Sans font family, with the font weight values 400, 700, and 800.
-Also add a link element to link your styles.css file. -->
+<!-- Step 7
+Wrap your h1 and p elements in a div element. Give that div a class attribute set to label. -->
+<!-- Step 16
+Lines can help separate and group important content, especially when space is limited.
+Create a div element below your h1 element, and give it a class attribute set to divider. -->
+<!-- Step 19
+Nutrition labels have a lot of bold text to draw attention to important information. Rather than targeting each element that needs to be bold, it is more efficient to use a class to apply the bold styling to every element.
+Give your second p element a class attribute set to bold. -->
+<!-- Step 21
+Give your h1 element a class attribute set to bold. This will make the text bold again. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,9 +19,12 @@ Also add a link element to link your styles.css file. -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800">
   </head>
   <body>
-    <h1>Nutrition Facts</h1>
-    <p>8 servings per container</p>
-    <p>Serving size 2/3 cup (55g)</p>
+    <div class="label">
+        <h1 class="bold">Nutrition Facts</h1>
+        <div class="divider"></div>
+        <p>8 servings per container</p>
+        <p class="bold">Serving size 2/3 cup (55g)</p>
+    </div>
   </body>
 </html>
 

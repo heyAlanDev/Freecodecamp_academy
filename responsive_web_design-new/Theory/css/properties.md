@@ -23,6 +23,11 @@ element:pseudo-class {} : to select the pseudo class of a element
     color : to change the text color;
     font-family : to change the element font;
     font-size : to change the element font size;
+    font-weight : to change the element font weight;
+    font-style : to change the element font style;
+    font-variant : to change the element font variant;
+    font-stretch : to change the element font stretch;
+    letter-spacing : to change the element letter spacing;
     text-align: to align the text;
     background-color : to paint the element background;
     background-image : to add a img element background;
