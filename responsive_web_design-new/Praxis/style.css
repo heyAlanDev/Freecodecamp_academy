@@ -1,62 +1,106 @@
-/* Step 23
-The float property is used to place an element on the left or right of its container, allowing other content (such as text) to wrap around it.
-Create a new .right selector and set the float property to right. */
-/* Step 25
-Now update your h1 selector to be header h1 to specifically target your h1 element within your new header. */
-/* Step 27
-Create a new .lg selector and give it a height property set to 10px. Also create an .lg, .md selector and set the background-color property to black. */
-/* Step 28
-You may notice there is still a small border at the bottom of your .lg element. To reset this, give your .lg, .md selector a border property set to 0. */
+/* Step 31
+The rem unit stands for root em, and is relative to the font size of the html element.
+Create an .sm-text selector and set the font-size to 0.85rem, which would calculate to be roughly 13.6px (remember that you set your html to have a font-size of 16px). */
+/* Step 33
+Create a new .calories-info h1 selector setting the top and bottom margin to -5px, and the left and right margin to -2px. */
+/* Step 34
+Create a .calories-info span selector and set the font-size to 1.2em. */
+/* Step 35
+The larger font size of the number 230 is causing it to overflow. Give the .calories-info h1 an overflow property set to hidden to avoid this. */
+/* Step 36
+Typography is often more art than science. You may have to tweak things like alignment until it looks correct.
+Give your .calories-info span selector a margin-top set to -7px. This will shift your 230 text into place. */
+/* Step 38
+Create an .md selector and give it a height property of 5px. */
+/* Step 41
+Give the .divider selector a clear property set to right. This will clear the float property, pushing the divider and any following content down below the float text. */
+/* Step 45
+Create a new .indent selector and give it a margin-left property set to 1em. */
+/* Step 46
+Create a .daily-value p selector to target all of your p elements in the daily-value section. Give this new selector a border-bottom set to 1px solid #888989. */
+/* Step 48
+The :not pseudo-selector can be used to select all elements that do not match the given CSS rule.
+div:not(#example) {
+  color: red;
+}
+The above selects all div elements without an id of example.
+Modify your .daily-value p selector to exclude the .no-divider elements. */
 
 * {
   box-sizing: border-box;
 }
+
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
-}
-
-header h1 {
-    text-align: center;
-    margin: -4px 0;
-    letter-spacing: 0.15px;
-}
-
-p {
-    margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 .label {
-    border: 2px solid black;
-    width: 270px;
-    margin: 20px auto;
-    padding: 0 7px;
+  border: 2px solid black;
+  width: 270px;
+  margin: 20px auto;
+  padding: 0 7px;
+}
+
+header h1 {
+  text-align: center;
+  margin: -4px 0;
+  letter-spacing: 0.15px;
+}
+
+p {
+  margin: 0;
 }
 
 .divider {
-    border-bottom: 1px solid #888989;
-    margin: 2px 0;
+  border-bottom: 1px solid #888989;
+  margin: 2px 0;
+  clear: right;
 }
 
 .bold {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .right {
-    float: right;
+  float: right;
 }
 
 .lg {
-    height: 10px;
+  height: 10px;
 }
 
-.lg, .md {
-    background-color: black;
-    border: 0;
+.lg,
+.md {
+  background-color: black;
+  border: 0;
 }
 
+.md {
+  height: 5px;
+}
 
+.sm-text {
+  font-size: 0.85rem;
+}
 
+.calories-info h1 {
+  margin: -5px -2px;
+  overflow: hidden;
+}
+
+.calories-info span {
+  font-size: 1.2em;
+  margin-top: -7px;
+}
+
+.indent {
+  margin-left: 1em;
+}
+
+.daily-value p:not(.not-divider) {
+  border-bottom: 1px solid #888989;
+}

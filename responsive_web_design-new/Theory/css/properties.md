@@ -74,6 +74,9 @@ element:pseudo-class {} : to select the pseudo class of a element
     opacity : you can control how opaque or transparent an element is. With the value 0, or 0%, the element will be completely transparent, and at 1.0, or 100%, the element will be completely opaque like it is by default.;
     filter : defines visual effects (like blur and saturation) to an element;
     transform : defines a transformation to an element;
+    clear : defines the clear property of an element;
+    overflow : defines the overflow property of an element;
+    float : defines the float property of an element;
 }
 ```
 ## Flexbox
