@@ -1,0 +1,45 @@
+/* Step 8
+A useful property of an SVG (scalable vector graphics) is that it contains a path attribute which allows the image to be scaled without affecting the resolution of the resultant image.
+Currently, the img is assuming it's default size, which is too large. Correctly, scale the image using it's id as a selector, and setting the width to max(100px, 18vw). */
+/* Step 9
+As described in the freeCodeCamp Style Guide, the logo should retain an aspect ratio of 35 / 4, and have padding around the text.
+First, change the background-color to #0a0a23 so you can see the logo. Then, use the aspect-ratio property to set the desired aspect ratio to 35 / 4. Finally, add a padding of 0.4rem all around. */
+/* Step 10
+Make the header take up the full width of its parent container, set it's height to 50px, and set the background-color to #1b1b32. Then, set the display to use Flexbox. */
+/* Step 11
+Change the h1 font color to #f1be32, and set the font size to min(5vw, 1.2em). */
+/* Step 13
+Target unordered list elements within nav elements, and use Flexbox to evenly space the children. */
+
+body {
+	background: #f5f6f7;
+	color: #1b1b32;
+	font-family: Helvetica;
+	margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+}
+
+#logo {
+    width: max(100px, 18vw);
+    background-color: #0a0a23;
+    aspect-ratio: 35 / 4;
+    padding: 0.4rem;
+}
+
+h1 {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
