@@ -77,6 +77,7 @@ element:pseudo-class {} : to select the pseudo class of a element
     clear : defines the clear property of an element;
     overflow : defines the overflow property of an element;
     float : defines the float property of an element;
+    text-indent : defines the text-indent property of an element;
 }
 ```
 ## Flexbox
