@@ -1,31 +1,25 @@
-<!-- Step 6
-Navigation is a core part of accessibility, and screen readers rely on you to provide the structure of your page. This is accomplished with semantic HTML elements.
-Add a header and a main element to your page.
-The header element will be used to introduce the page, as well as provide a navigation menu.
-The main element will contain the core content of your page. -->
-<!-- Step 7
-Within the header, provide context about the page by nesting one img, h1, and nav element.
-The img should point to https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg, and have an id of logo.
-The h1 should contain the text HTML/CSS Quiz. -->
-<!-- Step 12
-To enable navigation on the page, add an unordered list with the following three list items:
-	INFO
-	HTML
-	CSS
-The list items text should be wrapped in anchor tags. -->
-<!-- Step 14
-As this is a quiz, you will need a form for users to submit answers. You can semantically separate the content within the form using section elements.
-Within the main element, create a form with three nested section elements. Then, make the form submit to https://freecodecamp.org/practice-project/accessibility-quiz, using the correct method. -->
-<!-- Step 15
-To increase the page accessibility, the role attribute can be used to indicate the purpose behind an element on the page to assistive technologies. The role attribute is a part of the Web Accessibility Initiative (WAI), and accepts preset values.
-Give each of the section elements the region role. -->
-<!-- Step 16
-Every region role requires a visible label, which should be referenced by the aria-labelledby attribute.
-To the section elements, give the following aria-labelledby attributes:
-	student-info
-	html-questions
-	css-questions
-Then, within each section element, nest one h2 element with an id matching the corresponding aria-labelledby attribute. Give each h2 suitable text content. -->
+<!-- Step 18
+To be able to navigate within the page, give each anchor element an href corresponding to the id of the h2 elements. -->
+<!-- Step 19
+Filling out the content of the quiz, below #student-info, add three div elements with a class of info.
+Then, within each div nest one label element, and one input element. -->
+<!-- Step 20
+It is important to link each input to the corresponding label element. This provides assistive technology users with a visual reference to the input.
+This is done by giving the label a for attribute, which contains the id of the input.
+This section will take a student's name, email address, and date of birth. Give the label elements appropriate for attributes, as well as text content. Then, link the input elements to the corresponding label elements. -->
+<!-- Step 21
+Keeping in mind best-practices for form inputs, give each input an appropriate type and name attribute. Then, give the first input a placeholder attribute. -->
+<!-- Step 22
+Even though you added a placeholder to the first input element in the previous lesson, this is actually not a best-practice for accessibility; too often, users confuse the placeholder text with an actual input value - they think there is already a value in the input.
+Remove the placeholder text from the first input element, relying on the label being the best-practice. -->
+<!-- Step 23
+Arguably, D.O.B. is not descriptive enough. This is especially true for visually impaired users. One way to get around such an issue, without having to add visible text to the label, is to add text only a screen reader can read.
+Append a span element with a class of sr-only to the current text content of the third label element. -->
+<!-- Step 24
+Within the span element, add the text (Date of Birth). -->
+<!-- Step 26
+Within the second section element, add two div elements with a class of question-block.
+Then, within each div.question-block element, add one p element with text of incrementing numbers, starting at 1, and one fieldset element with a class of question. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,33 +30,54 @@ Then, within each section element, nest one h2 element with an id matching the c
       name="description"
       content="freeCodeCamp Accessibility Quiz practice project"
     />
-    <link rel="stylesheet" href="styles.css" />
     <title>Accessibility Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-		<header>
-			<img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" id="logo">
-			<h1>HTML/CSS Quiz</h1>
-			<nav>
-				<ul>
-					<li><a>INFO</a></li>
-					<li><a>HTML</a></li>
-					<li><a>CSS</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
-				<section role="region" aria-labelledby="student-info">
-					<h2 id="student-info">Student info</h2>
-				</section>
-				<section role="region" aria-labelledby="html-questions">
-					<h2 id="html-questions">HTML</h2>
-				</section>
-				<section role="region" aria-labelledby="css-questions">
-					<h2 id="css-questions">CSS</h2>
-				</section>
-			</form>
-		</main>
-	</body>
+    <header>
+      <img
+        id="logo"
+        src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+      />
+      <h1>HTML/CSS Quiz</h1>
+      <nav>
+        <ul>
+          <li><a href="#student-info">INFO</a></li>
+          <li><a href="#html-questions">HTML</a></li>
+          <li><a href="#css-questions">CSS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form
+        method="post"
+        action="https://freecodecamp.org/practice-project/accessibility-quiz"
+      >
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+          <div class="info">
+            <label for="student-name">Name:</label>
+            <input type="text" name="student-name" id="student-name" />
+          </div>
+          <div class="info">
+            <label for="student-email">Email:</label>
+            <input type="email" name="student-email" id="student-email" />
+          </div>
+          <div class="info">
+            <label for="birth-date"
+              >D.O.B.<span class="sr-only">(Date of Birth)</span>:</label
+            >
+            <input type="date" name="birth-date" id="birth-date" />
+          </div>
+        </section>
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">HTML</h2>
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">CSS</h2>
+        </section>
+      </form>
+    </main>
+  </body>
 </html>
+
