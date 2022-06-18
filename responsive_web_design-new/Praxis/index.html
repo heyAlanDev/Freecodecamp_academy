@@ -1,40 +1,21 @@
-<!-- Step 29
-Create a new div below your .lg element and give it a class attribute set to calories-info. -->
-<!-- Step 30
-Within your .calories-info element, create a p element. Give that p element a class attribute set to bold sm-text, and the text Amount per serving. -->
-<!-- Step 32
-Below your .sm-text element, create a new h1 element with the text Calories 230. Wrap the 230 portion of the text in a span element with the class set to right. -->
-<!-- Step 37
-Below your .calories-info element, add a div with the class attribute set to divider md. -->
-<!-- Step 39
-Create a new div element below your .md element. Give it a class attribute set to daily-value sm-text. Within this new div, add a p element with the text % Daily Value *, and set the class attribute to right bold. -->
-<!-- Step 40
-The float styling is causing the new p element to be outside of the label's border. Use your existing .divider element as an example to add a new divider after the p element. -->
-<!-- Step 42
-After your last .divider element, create a p element and give it the text Total Fat 8g 10%. Wrap Total Fat in a span element with the class set to bold. Wrap 10% in another span element with the class set to bold right. -->
-<!-- Step 43
-Below your element with the Total Fat text, create a new p element with the text Saturated Fat 1g 5%. Wrap the 5% in a span with the class attribute set to bold right. -->
-<!-- Step 44
-This new p element will need to be indented. Give it a class set to indent. -->
-<!-- Step 47
-The bottom borders under your % Daily Value * and Saturated Fat 1g 5% elements do not extend the full width of the label. Add no-divider to the class for these two elements. -->
-<!-- Step 49
-Now you will have to add separate dividers below your .no-divider elements.
-Your first .no-divider element has a .divider after it. Create another .divider after your second .no-divider element. -->
-<!-- Step 50
-After your last .divider, create another p element with the text Trans Fat 0g. Italicize the word Trans by wrapping it in an i element. Give the new p element the class attribute set to indent no-divider. -->
-<!-- Step 51
-Create another .divider after your last p element. -->
-<!-- Step 52
-After your last .divider, create a new p element with the text Cholesterol 0mg 0%. Wrap the text Cholesterol in a span element, and give that span element the class attribute set to bold. Wrap the text 0% in another span element, with the class set to bold right. -->
-<!-- Step 53
-Below your last p element, create another p element with the text Sodium 160mg 7%. Wrap the text Sodium in a span element with a class attribute set to bold. Wrap the 7% text in another span element with the class set to bold right. -->
-<!-- Step 54
-Add another p element with the text Total Carbohydrate 37g 13%. Like before, use span elements to make the text Total Carbohydrate bold, and the text 13% bold and right aligned. -->
-<!-- Step 55
-Below your last p element, add another p element with the text Dietary Fiber 4g. Give the p element the class necessary to indent it and remove the dividing border. Then create a divider below that p element. -->
-<!-- Step 56
-Create another p element after your last .divider, and give it the text Total Sugars 12g. Assign that p element the class values necessary to indent it and remove the bottom border. Then create another .divider below your new p element. -->
+<!-- Step 57
+The advantage to creating these dividers is that you can apply specific classes to style them individually. Add dbl-indent to the class for your last .divider. -->
+<!-- Step 59
+Below your .dbl-indent element, add a new p element with the text Includes 10g Added Sugars 20%. Your new p element should also be double indented, and have no bottom border. Use a span to make the 20% bold and right aligned.
+Then create another divider after that p element. -->
+<!-- Step 60
+After your last divider, create another p element with the text Protein 3g. Use the necessary classes to remove the bottom border, and a span to make the Protein bold.
+Following this element, create a large divider. -->
+<!-- Step 61
+Create another p element below your large divider. Give the p element the text Vitamin D 2mcg 10%. Use a span to make the 10% align to the right, but do not make it bold. -->
+<!-- Step 62
+Create another p element, give it the text Calcium 260mg 20%. Align 20% to the right. Below that, create a p element with the text Iron 8mg 45%, aligning the 45% to the right. -->
+<!-- Step 63
+Create the final p element for your .daily-value section. Give it the text Potassium 235mg 6%. Align the 6% text to the right, and remove the bottom border of the p element. -->
+<!-- Step 64
+Add a medium divider after your .daily-value element. Below that new divider, create a p element with the class attribute set to note.
+Give the p element the following text:
+`* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.` -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,7 +26,7 @@ Create another p element after your last .divider, and give it the text Total Su
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800"
       rel="stylesheet"
     />
-    <link href="./styles.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
     <div class="label">
@@ -66,19 +47,55 @@ Create another p element after your last .divider, and give it the text Total Su
       <div class="daily-value sm-text">
         <p class="right bold no-divider">% Daily Value *</p>
         <div class="divider"></div>
-        <p><span class="bold">Total Fat </span>8g<span class="bold right"> 10%</span></p>
-        <p class="indent no-divider">Saturated Fat 1g<span class="bold right">5%</span></p>
+        <p>
+          <span class="bold">Total Fat </span>8g<span class="bold right">
+            10%</span
+          >
+        </p>
+        <p class="indent no-divider">
+          Saturated Fat 1g<span class="bold right">5%</span>
+        </p>
         <div class="divider"></div>
         <p class="indent no-divider"><i>Trans</i> Fat 0g</p>
         <div class="divider"></div>
-        <p><span class="bold">Cholesterol</span> 0mg<span class="bold right">0%</span></p>
-        <p><span class="bold">Sodium</span> 160mg<span class="bold right">7%</span></p>
-        <p><span class="bold">Total Carbohydrate</span> 37g<span class="bold right">13%</span></p>
-        <p class="indent no-divider"><span class="bold">Dietary Fiber</span> 4g</p>
+        <p>
+          <span class="bold">Cholesterol</span> 0mg<span class="bold right"
+            >0%</span
+          >
+        </p>
+        <p>
+          <span class="bold">Sodium</span> 160mg<span class="bold right"
+            >7%</span
+          >
+        </p>
+        <p>
+          <span class="bold">Total Carbohydrate</span> 37g<span
+            class="bold right"
+            >13%</span
+          >
+        </p>
+        <p class="indent no-divider">
+          <span class="bold">Dietary Fiber</span> 4g
+        </p>
         <div class="divider"></div>
-        <p class="indent no-divider"><span class="bold">Total Sugars</span> 12g</p>
+        <p class="indent no-divider">
+          <span class="bold">Total Sugars</span> 12g
+        </p>
+        <div class="divider dbl-indent"></div>
+        <p class="dbl-indent no-divider">
+          Includes 10g Added Sugars<span class="right bold">20%</span>
+        </p>
         <div class="divider"></div>
+        <p class="dbl-indent no-divider"><span class="bold">Protein </span>3g</p>
+        <div class="divider lg"></div>
+        <p>Vitamin D 2mcg<span class="right">10%</span></p>
+        <p>Calcium 260mg<span class="right">20%</span></p>
+        <p>Iron 8mg<span class="right">45%</span></p>
+        <p class="no-divider">Potassium 235mg<span class="right">6%</span></p>
       </div>
-    </div>
+      <div class="divider md"></div>
+      <p class="note">
+      * The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.
+      </p>
   </body>
 </html>
