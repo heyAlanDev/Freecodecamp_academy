@@ -7,6 +7,7 @@ element1, element2, elementn {} : to select all element with this tags
 dadElement sonElement {} : to select sonElement that nest in dadElement
 .classSelector {} : to select element this class attribute
 element:pseudo-class {} : to select the pseudo class of a element 
+element::pseudo-element {} : to select the pseudo element of a element
 [attr] {} : Represents elements with an attribute name of attr.
 [attr=value] {} : Represents elements with an attribute name of attr whose value is exactly value.
 [attr~=value] {} : Represents elements with an attribute name of attr whose value is a whitespace-separated list of words, one of which is exactly value.

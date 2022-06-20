@@ -1,25 +1,24 @@
-<!-- Step 18
-To be able to navigate within the page, give each anchor element an href corresponding to the id of the h2 elements. -->
-<!-- Step 19
-Filling out the content of the quiz, below #student-info, add three div elements with a class of info.
-Then, within each div nest one label element, and one input element. -->
-<!-- Step 20
-It is important to link each input to the corresponding label element. This provides assistive technology users with a visual reference to the input.
-This is done by giving the label a for attribute, which contains the id of the input.
-This section will take a student's name, email address, and date of birth. Give the label elements appropriate for attributes, as well as text content. Then, link the input elements to the corresponding label elements. -->
-<!-- Step 21
-Keeping in mind best-practices for form inputs, give each input an appropriate type and name attribute. Then, give the first input a placeholder attribute. -->
-<!-- Step 22
-Even though you added a placeholder to the first input element in the previous lesson, this is actually not a best-practice for accessibility; too often, users confuse the placeholder text with an actual input value - they think there is already a value in the input.
-Remove the placeholder text from the first input element, relying on the label being the best-practice. -->
-<!-- Step 23
-Arguably, D.O.B. is not descriptive enough. This is especially true for visually impaired users. One way to get around such an issue, without having to add visible text to the label, is to add text only a screen reader can read.
-Append a span element with a class of sr-only to the current text content of the third label element. -->
-<!-- Step 24
-Within the span element, add the text (Date of Birth). -->
 <!-- Step 26
 Within the second section element, add two div elements with a class of question-block.
 Then, within each div.question-block element, add one p element with text of incrementing numbers, starting at 1, and one fieldset element with a class of question. -->
+<!-- Step 27
+Each fieldset will contain a true/false question.
+Within each fieldset, nest one legend element, and one ul element with two options. -->
+<!-- Step 28
+Give each fieldset an adequate name attribute. Then, give both unordered lists a class of answers-list.
+Finally, use the legend to caption the content of the fieldset by placing a true/false question as the text content. -->
+<!-- Step 29
+To provide the functionality of the true/false questions, we need a set of inputs which do not allow both to be selected at the same time.
+Within each list element, nest one label element, and within each label element, nest one input element with the appropriate type. -->
+<!-- Step 30
+Although not required for label elements with a nested input, it is still best-practice to explicitly link a label with its corresponding input element.
+Link the label elements with their corresponding input elements. -->
+<!-- Step 31
+Give the label elements text such that the input comes before the text. Then, give the input elements a value matching the text.
+The text should either be True or False. -->
+<!-- Step 32
+If you click on the radio inputs, you might notice both inputs within the same true/false fieldset can be selected at the same time.
+Group the relevant inputs together such that only one input from a pair can be selected at a time. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -65,13 +64,59 @@ Then, within each div.question-block element, add one p element with text of inc
           </div>
           <div class="info">
             <label for="birth-date"
-              >D.O.B.<span class="sr-only">(Date of Birth)</span>:</label
+              >D.O.B.<span class="sr-only">(Date of Birth)</span></label
             >
             <input type="date" name="birth-date" id="birth-date" />
           </div>
         </section>
         <section role="region" aria-labelledby="html-questions">
           <h2 id="html-questions">HTML</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="html-question-one">
+              <legend>
+                The legend element represents a caption for the content of its
+                parent fieldset element
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" value="true" name="q1"/>
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" value="false" name="q1"/>
+                    False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="html-question-two">
+              <legend>
+                A label element nesting an input element is required to have a
+                for attribute with the same value as the input's id
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" value="true" name="q2"/>
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" value="false" name="q2"/>
+                    False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
         </section>
         <section role="region" aria-labelledby="css-questions">
           <h2 id="css-questions">CSS</h2>
@@ -80,4 +125,3 @@ Then, within each div.question-block element, add one p element with text of inc
     </main>
   </body>
 </html>
-
